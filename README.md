@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install`
+
+Install all the required library dependencies.\
+
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -19,52 +23,79 @@ You may also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Project Requirements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Build a single page that displays the profile of 10 users (the data is obtained from an open API ). Each
+user's profile contains an avatar picture, name, email, phone, address, website and company name. Beneath
+the profile are 3 action buttons to like, edit and delete. Upon clicking the edit button , a modal window
+should pop up and display information about the edited profile and the user should be allowed to edit the
+information. Upon clicking the like button , the button should be toggled. Upon clicking delete, a
+confirmation popup should display and upon confirmation, should delete the card.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Documentation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In the Project building and implementation, We strongly feel that single page application should handle all of the required features and works smoothly. 
 
-### `npm run eject`
+**The Project design is as per using Material UI design, best practices, components and their styling**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**The Project is build FULLY RESPONSIVE for all the devices irrespective of Mobile/Browser,Desktop**
+**The UI for the Website is Awesome**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Package.json (Dependencies)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+"dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@mui/icons-material": "^5.14.3",
+    "@mui/material": "^5.14.4",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.2",
+    "react-scripts": "5.0.1",
+    "redux": "^4.2.1",
+    "sass": "^1.64.2",
+    "web-vitals": "^2.1.4"
+  },
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Workflows
 
-## Learn More
+The project has used Material UI design and their components which are designed to easily integrate with the project requirements. I have followed Modular pattern building the components and implementing the features.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The Single Page consists of Two Section, in which first one is Home Banner Component and Second one is Users Details Component.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### User Details Component
 
-### Code Splitting
+It consists of 10 user cards displayed , in which each user card shows details of each user like , name, username, email, phone, website, address and company. There are also 3 actions i.e. Like button, Edit button, Delete Button. Each Action button performs thier respective actions. There are multiple MUI components that are integrated into this main user detail component for easy implementation like, Dialog, Alert, Button, Snackbar, Stack, Tooltip, Typography, Paper , Box etc.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### Implentations, Understanding & Integrated concepts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+● Ability to create new react projects using Create React App
+● Understanding of JSX
+● Passing props to components
+● Understanding of stateful and stateless Components
+● Basic understanding of state management and component lifecycle methods
+● Fetching data from an API endpoint
+● Conditional rendering
+● Working with lists
+● Code structuring and packaging
+● Ability of the applicant to learn a new React UI library and use its components in their app
+● Handling events and working with forms
+● Lifting State Up
+● Show the loading icon before loading the data from api
+● Avatar must be from the dicebear api
 
-### Making a Progressive Web App
+### Future TODOs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+● User Specific Authentication using JWT or OAuth.
+● Store Liked profiles for respective each Authenticated User
+● Features like, WhatsApp message, Phone call, emailing and so on.
 
-### Advanced Configuration
+**Thank You for Reading !!!**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
