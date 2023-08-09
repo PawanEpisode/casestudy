@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/casestudy/static/css/main.9dbaafba.css",
+    "main.js": "/casestudy/static/js/main.8df60f43.js",
+    "static/media/HomeBanner.png": "/casestudy/static/media/HomeBanner.bf8d72f005c835adb7de.png",
+    "index.html": "/casestudy/index.html",
+    "main.9dbaafba.css.map": "/casestudy/static/css/main.9dbaafba.css.map",
+    "main.8df60f43.js.map": "/casestudy/static/js/main.8df60f43.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9dbaafba.css",
+    "static/js/main.8df60f43.js"
+  ]
+}
